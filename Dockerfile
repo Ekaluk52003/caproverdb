@@ -12,4 +12,4 @@ COPY . /home/app
 
 RUN npm run build
 
-CMD ./scripts/start.sh
+CMD ["npm", "run", "start"]
