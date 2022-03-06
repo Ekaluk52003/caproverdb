@@ -4,9 +4,10 @@ import { Client } from "pg";
 const PORT = process.env.PORT || 3000;
 
 const client = new Client({
-  password: "postgres",
-  user: "postgres",
-  host: "postgres",
+  user: "admin",
+  password: "test123",
+  host: "srv-captain--tutorial-postgres-db",
+  database: "my-db"
 });
 
 const app = express();
